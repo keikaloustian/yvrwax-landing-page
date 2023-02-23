@@ -9,18 +9,18 @@
 
     <link rel="stylesheet" href="dist/output.css" />
 
-    <!-- The link tag method of importing webfonts is preferred over @import rules in css because @import defers the loading of the resource until the external file is fetched and worsens performance -->
+    <!-- The link tag method for importing webfonts is preferred over @import rules in css because @import defers the loading of the resource until the external file is fetched and worsens performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="h-screen bg-white">
-    <header class="w-[100vw] bg-neutral-900 text-stone-50">
+  <body class="min-w-[300px] bg-white">
+    <header class="fixed w-[100vw] bg-neutral-900 text-stone-50">
       <h1
-        class="m-1 ml-2 inline-block font-title text-2xl md:text-4xl xl:text-[2.8vw] xl:leading-[1.1em]"
+        class="2xl:text- m-1 ml-2 inline-block font-title text-2xl md:text-4xl xl:text-6xl"
       >
         YVR WAX
       </h1>
@@ -31,14 +31,20 @@
         <a href="#booking">BOOK NOW</a>
       </nav> -->
     </header>
-    <!-- <section id="services" class="h-[2000px]"><p>Services</p></section>
-    <section id="location"><p>Location</p></section>
-    <section id="booking"><p>Book Appointment</p></section>
-
-    <footer>
-      <span class=""
-        >Built by <a href="https://github.com/keikaloustian">K</a></span
-      >
-    </footer> -->
+    <main class="">
+      <section class="h-[400px] bg-blue-300"></section>
+      <section id="services" class="min-h-[200px] bg-neutral-400">
+        <p>Services</p>
+      </section>
+      <section id="location" class="min-h-[200px] bg-neutral-600">
+        <p>Location</p>
+      </section>
+      <section id="booking" class="min-h-[200px] bg-neutral-800">
+        <p>Book Appointment</p>
+      </section>
+    </main>
+    <footer class="bg-neutral-900">
+      <p class="text-stone-50">Built by K</p>
+    </footer>
   </body>
 </html>
